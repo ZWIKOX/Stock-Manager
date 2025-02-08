@@ -1,29 +1,34 @@
 # Stock Management System
 
-A simple stock management system built with Python, Tkinter, and MySQL. This application provides a modern, tabbed user interface for managing stock records with full CRUD (Create, Read, Update, Delete) functionality and CSV export support.
+This is a desktop application for managing stock items. Built with Python, Tkinter, and MySQL, the application allows you to perform full CRUD (Create, Read, Update, Delete) operations, generate random stock item IDs, and export data to CSV.
 
 ## Features
 
-- **CRUD Operations:** Create, read, update, and delete stock records.
-- **Random ID Generation:** Automatically generate valid stock item IDs in the format `XXXXX~X` (5 digits, a tilde, and 1 uppercase letter).
-- **Tabbed Interface:** Manage stock details and view the stock list on separate tabs.
-- **Menu Bar:** Includes options for exporting data to CSV and exiting the application.
-- **CSV Export:** Export all stock records to a CSV file with a timestamped filename.
+- **CRUD Operations:**  
+  Create, update, delete, and view stock items stored in a MySQL database.
+
+- **Random ID Generation:**  
+  Generate a valid stock item ID in the format `XXXXX~X` (five digits followed by a tilde and one uppercase letter).
+
+- **CSV Export:**  
+  Export stock data to a CSV file with a timestamped filename.
+
+- **User-Friendly GUI:**  
+  A simple and clean user interface built with Tkinter using frames, labels, entries, buttons, and a Treeview for displaying data.
 
 ## Technologies Used
 
 - **Python 3.x**
-- **Tkinter** & **ttk** for building the GUI.
-- **PyMySQL** for MySQL database connectivity.
-- **MySQL** as the backend database.
-- **csv** module for data export.
-- **datetime** for managing timestamps.
+- **Tkinter** for the GUI
+- **pymysql** for MySQL database connectivity
+- **MySQL** for data storage
+- **csv** and **datetime** for CSV export functionality
 
-### Prerequisites
+## Prerequisites
 
 - **Python 3.x** must be installed on your system.
 - **MySQL** server must be installed and running.
-- Install the required Python package using pip:
+- Install the required Python package by running:
 
   ```bash
   pip install pymysql
